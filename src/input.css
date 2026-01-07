@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-pop-900: #2e1065;
+  --color-pop-800: #581c87;
+  --color-pop-700: #7e22ce;
+  --color-pop-100: #f3e8ff;
+
+  --color-vibe-pink: #db2777;
+  --color-vibe-orange: #f97316;
+  --color-vibe-yellow: #fbbf24;
+
+  --background-image-sunset-gradient: linear-gradient(
+    135deg,
+    #7e22ce 0%,
+    #db2777 50%,
+    #f97316 100%
+  );
+  --background-image-soft-gradient: linear-gradient(
+    to top,
+    #f3e8ff 0%,
+    #ffffff 100%
+  );
+
+  --radius-blob: 40% 60% 70% 30% / 40% 50% 60% 50%;
+
+  --shadow-pop: 10px 10px 0px 0px rgba(88, 28, 135, 0.15);
+  --shadow-pop-hover: 5px 5px 0px 0px rgba(88, 28, 135, 0.25);
+  --shadow-pop-button: 0px 6px 0px 0px #581c87;
+}
+
+/* --- Stili CSS Personalizzati --- */
+
+@layer base {
+  body {
+    color: #2e1065;
+    background-color: #ffffff;
+  }
+
+  a:focus,
+  button:focus {
+    outline: 3px solid #db2777;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .text-gradient-anim {
+    background: linear-gradient(to right, #7e22ce, #db2777, #f97316, #7e22ce);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-move 8s ease infinite;
+  }
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
