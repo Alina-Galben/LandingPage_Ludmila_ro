@@ -79,6 +79,7 @@ Per migliorare indicizzazione, condivisione e user experience, il progetto inclu
 
 ## 📁 Struttura del progetto
 
+```text
 ├── index.html
 ├── assets/
 │   ├── ludy.webp
@@ -91,6 +92,7 @@ Per migliorare indicizzazione, condivisione e user experience, il progetto inclu
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
 
 📌 Nota:
 Il file `src/output.css` è generato automaticamente tramite Tailwind CSS a partire da `src/input.css` durante il processo di build ed è incluso nel repository per facilitare il deploy e la visualizzazione immediata del progetto.
