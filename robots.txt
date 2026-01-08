@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ludmilagalben.com/sitemap.xml
