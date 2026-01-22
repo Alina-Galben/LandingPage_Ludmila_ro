@@ -2,8 +2,7 @@
 <html lang="ro" class="scroll-smooth">
 
 <head>
-    <script type="text/javascript"
-        src="https://embeds.iubenda.com/widgets/dbcfd4d8-bbad-4ab2-835c-91d7df80d86f.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -503,7 +502,7 @@
                     <div
                         class="relative w-48 h-48 rounded-full border-8 border-white shadow-pop overflow-hidden bg-pop-100">
                         <img src="assets/ludy.webp" alt="Ludmila Galben - Marketing Partner" width="192" height="192"
-                            loading="lazy" fetchpriority="high" class="w-full h-full object-cover" />
+                            loading="lazy" class="w-full h-full object-cover" />
                     </div>
                 </div>
 
@@ -624,18 +623,37 @@
             </a>
 
             <div class="mt-10 pt-20 border-t-2 border-white/10">
+
                 <div class="text-white font-bold mb-8 flex flex-wrap justify-center gap-6">
                     <a href="https://www.iubenda.com/privacy-policy/27872548"
                         class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe "
-                        title="Politică de Confidențialitate ">Politică de Confidențialitate</a>
-                    <script
-                        type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+                        title="Politică de Confidențialitate ">Politică de Confidențialitate
+                    </a>
+
                     <a href="https://www.iubenda.com/privacy-policy/27872548/cookie-policy"
                         class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe "
-                        title="Politica privind Cookie ">Politica privind Cookie</a>
-                    <script
-                        type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+                        title="Politica privind Cookie ">Politica privind Cookie
+                    </a>
+
+                    <script>
+                        (function (w, d) {
+                            const loadIubenda = () => {
+                                const s = d.createElement("script");
+                                s.src = "https://cdn.iubenda.com/iubenda.js";
+                                s.defer = true;
+                                d.body.appendChild(s);
+                            };
+
+                            if ("requestIdleCallback" in w) {
+                                w.requestIdleCallback(loadIubenda, { timeout: 2000 });
+                            } else {
+                                w.addEventListener("load", loadIubenda);
+                            }
+                        })(window, document);
+                    </script>
+
                 </div>
+
                 <p class="text-white text-sm font-black uppercase tracking-[0.4em] mb-8">
                     Acces Instant • Plată Sigură • Comunitate
                 </p>
@@ -645,6 +663,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://embeds.iubenda.com/widgets/dbcfd4d8-bbad-4ab2-835c-91d7df80d86f.js" defer></script>
+
 </body>
 
 </html>
