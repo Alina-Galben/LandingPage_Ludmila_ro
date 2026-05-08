@@ -83,7 +83,7 @@ Per migliorare indicizzazione, condivisione e user experience, il progetto inclu
 ├── index.html
 ├── assets/
 │   ├── ludy.webp
-│   └── ubs1.webp
+│   └── ubC1.webp
 ├── src/
 │   ├── input.css
 │   └── output.css
